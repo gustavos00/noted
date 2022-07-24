@@ -1,14 +1,24 @@
-import * as S from './styles'
+import * as S from './styles';
+import Lottie from 'react-lottie';
+import loginAnimation from '../../_common/animations/login-animation.json';
 
 interface ILoginAndRegisterSlider {
-  animation: string
+    animation: string;
 }
 
 export function LoginAndRegisterSlider() {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: loginAnimation,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
+    };
+
     return (
-      <S.Container>
-        <h1>Teste</h1>
-      </S.Container>
+        <S.Container>
+            <Lottie options={defaultOptions} width="40vw" height="80vh"/>
+        </S.Container>
     );
-  }
-  
+}

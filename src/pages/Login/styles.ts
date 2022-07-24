@@ -7,7 +7,6 @@ export const LoginContainer = styled.div`
 export const LoginFormWrapper = styled.div`
     width: 50vw;
     height: 100vh;
-    border: 1px solid red;
 
     display: flex;
     justify-content: center;
@@ -15,8 +14,6 @@ export const LoginFormWrapper = styled.div`
 `;
 
 export const LoginFormContainer = styled.form`
-    border: 1px solid red;
-
     display: flex;
     justify-content: center;
     align-items: center;
